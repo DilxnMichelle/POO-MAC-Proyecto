@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de Energía Inteligente</title>
+</head>
+<body>
+  <h1>Sistema de Control de Energía Inteligente</h1>
+
+  <div>
+    <label for="selectDispositivo">Dispositivo:</label>
+    <select id="selectDispositivo">
+      <option value="E1">E1 - Refrigerador (400W)</option>
+      <option value="E2">E2 - Microondas (1200W)</option>
+      <option value="C1">C1 - Aire Acondicionado (1500W)</option>
+    </select>
+
+    <button id="btnEncender">Encender</button>
+    <button id="btnApagar">Apagar</button>
+    <button id="btnTurboOn">Turbo ON (Clima)</button>
+    <button id="btnTurboOff">Turbo OFF (Clima)</button>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="inputHoras">Horas:</label>
+    <input type="number" id="inputHoras" value="2" min="0" step="any">
+
+    <button id="btnCalcular">Calcular Consumo</button>
+    <button id="btnRecibo">Estimar Recibo Bimestral</button>
+  </div>
+
+  <hr>
+
+  <h3>Resultados y Alertas:</h3>
+  <div id="salida">Resultados...</div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
